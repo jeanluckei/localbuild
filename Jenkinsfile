@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'eclipse-temurin:17-jdk-jammy' } }
+    agent { docker { image 'gradle:eclipse-temurin' } }
     stages {
         stage('build') {
             steps {
